@@ -893,7 +893,7 @@ class Room:
 
              #Room Name                         #N    #S    #E    #W    #D    #U    #Start                                       #Description
 Office = Room('Office',                    None, None, None, None, None, None, 'Dining_Room',                               'Hello! Your mission in this Motel is to find Your_Room, When you find the Your_Room, Exit the Motel and Continue to Explore some places, Good Luck Have Fun.   **** Type "Start" to start the game ****' )
-Dining_Room = Room('Dining_Room',          None, 'Parking_lot', 'Hallway', None, None, None, None,                          'You are in the Dining Room, there are lots of people waiting in line to eat delicious food, there is Hallway to your "east"')
+Dining_Room = Room('Dining_Room',          'Win_room', 'Parking_lot', 'Hallway', None, None, None, None,                          'You are in the Dining Room, there are lots of people waiting in line to eat delicious food, there is Hallway to your "east"')
 Hallway = Room('Hallway',                  None, 'Parking_lot', 'Kitchen', 'Dining_Room', 'Kitchen', None, None,            'There are several doors. One to your west, and one to your south. Choose wisely..' )                                                                                                 
 Kitchen = Room('Kitchen',                  None, None, 'Room_101', 'Hallway', 'Bank', 'Hallway', None,                      'You are in the kitchen. There Room_101 to your "east", people are looking at you tht who is this person and what are they doing here')
 Cabinet = Room('Cabinet',                  None, 'Office', None, 'Kitchen', None, None, None,                               'The cabinet is locked it only opens with Code.')
@@ -915,7 +915,7 @@ Tech_Room = Room('Tech_Room',                     'W_Building', 'South_Admin', N
 W_Building = Room('W_Building',             None, 'Tech_Room', None, None, None, None, hangman,                                     'You are in an old W_Building. There are many old machines that once did something. Every step makes a creek. *BOOM!* A machine falls, revealing the other team behind it. They rush past you to the Science_Building. You must hurry to get ahead and win.')
 South_Admin = Room('South_Admin',                 'Tech_Room', 'School', 'Exit_Motel', None, None, None, hangman,                               'You are in an old South_Admin. It was once an old nice South_Admin. Now it looks like it hasn’t been lived in you many years. You walk into the family room, but the other team rushes past you, out to the street. They must have seen that there was nothing to find here. You and your partner must hurry to get past them and win!')
 Exit_School = Room('Exit_Motel',             'Bank', None, None, None, None, None, RR,                                  'You have found Motels Exit You have gained 18 Exp and 20 Strength and 22 intelligence, You may Go and finish other Missions Good Luck...')
-
+Win_room = Room('Wining Room',                    None, None, None, None, None, None, None,                                'You WON the game :)    Press " Q " to quit ' ) 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 node = Office 
@@ -956,3 +956,5 @@ while True:
         print
         print "DESCRIPTION: " + node.description   
         raise SystemExit
+        
+        
