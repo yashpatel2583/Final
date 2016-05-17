@@ -177,7 +177,7 @@ def Equipment():
         total = one + two + three + four     
         Stats['GP'] = total
         if Stats['GP'] == 0:
-            print 'You broke'
+            print 'You are broke :('
         else: 
             print "You have %d gold pieces" % Stats["GP"]  
             
@@ -190,7 +190,7 @@ def Equipment():
         total = one + two + three + four
         Stats['GP'] = total
         if Stats['GP'] == 0:
-            print 'You broke'
+            print 'You are broke :('
         else: 
             print "You have %d gold pieces" % Stats["GP"]                      
         
@@ -203,7 +203,7 @@ def Equipment():
         total = one + two + three + four + five
         Stats['GP'] = total
         if Stats['GP'] == 0:
-            print 'You broke'
+            print 'You are broke :('
         else: 
             print "You have %d gold pieces" % Stats["GP"]                          
         
@@ -213,7 +213,7 @@ def Equipment():
         total = one + two
         Stats['GP'] = total
         if Stats['GP'] == 0:
-            print 'You broke'
+            print 'You are broke :('
         else: 
             print "You have %d gold pieces" % Stats["GP"]                           
         
@@ -227,7 +227,7 @@ def Equipment():
         total = one + two + three + four + five + six
         Stats['GP'] = total
         if Stats['GP'] == 0:
-            print 'You broke'
+            print 'You are broke :('
         else: 
             print "You have %d gold pieces" % Stats["GP"]                               
         
@@ -240,7 +240,7 @@ def Equipment():
         total = one + two + three + four + five
         Stats['GP'] = total, "and 5 silver pieces"
         if Stats['GP'] == 0:
-            print 'You broke'
+            print 'You are broke :('
         else: 
             print "You have %d gold pieces" % Stats["GP"]      
         
@@ -254,7 +254,7 @@ def Equipment():
         total = one + two + three + four + five + six
         Stats['GP'] = total
         if Stats['GP'] == 0:
-            print 'You broke'
+            print 'You are broke :('
         else: 
             print "You have %d gold pieces" % Stats["GP"]                        
         
@@ -268,7 +268,7 @@ def Equipment():
         total = one + two + three + four + five + six
         Stats['GP'] = total
         if Stats['GP'] == 0:
-            print 'You broke'
+            print 'You are broke :('
         else: 
             print "You have %d gold pieces" % Stats["GP"]                          
         
@@ -281,7 +281,7 @@ def Equipment():
         total = one + two + three + four + five
         Stats['GP'] = total
         if Stats['GP'] == 0:
-            print 'You broke'
+            print 'You are broke :('
         else: 
             print "You have %d gold pieces" % Stats["GP"]                      
         
@@ -292,7 +292,7 @@ def Equipment():
         total = one + two + three
         Stats['GP'] = total
         if Stats['GP'] == 0:
-            print 'You broke'
+            print 'You are broke :('
         else: 
             print "You have %d gold pieces" % Stats["GP"]                        
         
@@ -303,7 +303,7 @@ def Equipment():
         total = 0#one + two + three
         Stats['GP'] = total                    
         if Stats['GP'] == 0:
-            print 'You broke'
+            print 'You are broke :('
         else: 
             print "You have %d gold pieces" % Stats["GP"]                  
 
@@ -459,7 +459,7 @@ World_map = {
                           ]
                          },
             'open letter' : {
-                'DESCRIPTION' : 'For Secret Missions, dont forget to type use for hidden Games in the room you think there might be Game "Be Careful"',
+                'DESCRIPTION' : 'For Secret Missions, dont forget to type "Start" for hidden Games in the room you think there might be Game "Be Careful"',
                 'PATHS' : [
                     (change_room, 'Window', 'Go north'),
                     (start_conversation, 'Manager', 'Talk to Manager')
@@ -474,7 +474,7 @@ World_map = {
                           ]
                                 },
             'Water_Lake' : {
-                'DESCRIPTION' : 'You jump out of the Office window. And now you have exited the office ,You fall in Water and you are injured find Your_Room as Soon as you can to get Medical Aid',
+                'DESCRIPTION' : 'You jump out of the Office window. And now     you have exited the office ,You fall in Water and you are injured find Your_Room as Soon as you can to get Medical Aid',
                                 },
                                 
             'Exit' : {
